@@ -1,0 +1,114 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: liu gang, xiankejidaxue, LIC=21E4T-R6B42-RACDM-XQXYC-7TG5G-VE37M
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.18
+Toolchain Path:  F:\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+F:\Users\远程体征检测\Project\ADS1292.uvprojx
+Project File Date:  11/09/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'F:\Keil\ARM\ARMCC\Bin'
+Build target 'ADS1292'
+compiling usart.c...
+compiling LED.c...
+compiling stm32f10x_it.c...
+compiling main.c...
+..\User\main.c(176): warning:  #223-D: function "SysTick_Init" declared implicitly
+  	SysTick_Init(72);
+..\User\main.c(191): warning:  #223-D: function "vSMBus_Init" declared implicitly
+  	vSMBus_Init();//SMBus??始化
+..\User\main.c(253): warning:  #223-D: function "delay_ms" declared implicitly
+  		delay_ms(200);
+..\User\main.c(263): warning:  #177-D: variable "buffer" was declared but never referenced
+  	u8 buffer[20];
+..\User\main.c: 4 warnings, 0 errors
+compiling lze_lcd.c...
+compiling Delay.c...
+compiling PeripheralInit.c...
+compiling EXTInterrupt.c...
+compiling mlx90614.c...
+..\APP\MLX90614\mlx90614.c(116): warning:  #177-D: variable "iTemp" was declared but never referenced
+  	int16_t iTemp ;
+..\APP\MLX90614\mlx90614.c: 1 warning, 0 errors
+compiling spi.c...
+compiling SysTick.c...
+compiling system.c...
+compiling smbus.c...
+..\APP\smbus\smbus.c(41): warning:  #223-D: function "delay_us" declared implicitly
+  	delay_us(5) ;
+..\APP\smbus\smbus.c(54): warning:  #223-D: function "delay_us" declared implicitly
+  	delay_us(5) ;
+..\APP\smbus\smbus.c(69): warning:  #223-D: function "delay_us" declared implicitly
+  	delay_us(5) ;
+..\APP\smbus\smbus.c(104): warning:  #223-D: function "delay_us" declared implicitly
+  	delay_us(5) ;
+..\APP\smbus\smbus.c(117): warning:  #223-D: function "delay_us" declared implicitly
+  	delay_us(5) ;
+..\APP\smbus\smbus.c(139): warning:  #223-D: function "delay_us" declared implicitly
+          delay_us(5) ;
+..\APP\smbus\smbus.c(160): warning:  #223-D: function "delay_us" declared implicitly
+          delay_us(5) ;
+..\APP\smbus\smbus.c(262): warning:  #177-D: variable "crc" was declared but never referenced
+  	uint8_t crc ;
+..\APP\smbus\smbus.c(99): warning:  #177-D: function "vSMBus_SendNAck" was declared but never referenced
+  static void vSMBus_SendNAck()
+..\APP\smbus\smbus.c: 9 warnings, 0 errors
+compiling ADS1292.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_spi.c...
+compiling misc.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_exti.c...
+assembling startup_stm32f10x_hd.s...
+compiling jansson_config.c...
+compiling stm32f10x_usart.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=22912 RO-data=1412 RW-data=144 ZI-data=2808  
+FromELF: creating hex file...
+".\Obj\ADS1292.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Jansson.1.0.0.pack
+                Keil::Data Exchange:JSON:Jansson:2.7.0
+                Jansson is a C library for encoding, decoding and manipulating JSON data
+   * Component: Jansson Version: 2.7.0
+
+<h2>Collection of Component include folders:</h2>
+  F:\Users\远程体征检测\Project\RTE
+  F:\Keil\ARM\PACK\Keil\Jansson\1.0.0\src
+  F:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Keil::Data Exchange:JSON:Jansson:2.7.0
+      Source file:   src\jansson_config.c
+      Library file:  lib\jansson_CM3LE.lib
+      Include file:  src\jansson.h
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>
